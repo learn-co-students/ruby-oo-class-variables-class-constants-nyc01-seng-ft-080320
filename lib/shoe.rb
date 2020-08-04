@@ -2,6 +2,8 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
+  # I really don't understand why we're using a constant here...
+  # aren't constants only supposed to be for things that will never change?
   BRANDS = []
 
   def initialize(brand)
